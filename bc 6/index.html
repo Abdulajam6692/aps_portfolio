@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A* Pathfinder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>A* Pathfinding Algorithm</h2>
+    
+    <div class="input-group">
+      <label>Enter Grid (e.g., "1 2 3; 4 5 6; 7 8 9"):</label>
+      <textarea id="gridInput" rows="4">1 2 3; 4 1 5; 7 2 1</textarea>
+    </div>
+
+    <div class="input-group">
+      <label>Start (x,y):</label>
+      <input id="start" value="0,0">
+    </div>
+
+    <div class="input-group">
+      <label>Goal (x,y):</label>
+      <input id="end" value="2,2">
+    </div>
+
+    <button onclick="runAStar()">Find Path</button>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

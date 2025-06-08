@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sparse Table - Sensor Data Query</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Sensor Data Range Query (Min using Sparse Table)</h2>
+
+    <!-- your input labels and form elements here -->
+      <div>
+    <label>Enter Sensor Data (comma separated):</label>
+    <input id="sensorData" type="text" placeholder="e.g., 23, 19, 31, 28, 21, 25">
+  </div>
+  <div>
+    <label>Query Range [L, R]:</label>
+    <input id="left" type="number" placeholder="Start index">
+    <input id="right" type="number" placeholder="End index">
+    <button onclick="runQuery()">Query Min</button>
+  </div>
+
+    <div id="output"></div>
+    <canvas id="sensorChart"></canvas>
+  </div>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>
+

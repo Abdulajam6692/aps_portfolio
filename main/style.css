@@ -1,0 +1,158 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  text-align: center;
+}
+
+/* Header (Hero Section) */
+.hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Dark Blue Gradient */
+  color: white;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.github-btn {
+  background-color: #ff6363;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.github-btn:hover {
+  background-color: #d94c4c;
+}
+
+/* Info Section */
+.info {
+  background-color: #ffffff;
+  color: #444;
+  padding: 30px;
+  max-width: 700px;
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.info h2 {
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Card Section (Each Project) */
+.card {
+  background-color: #fef6e4; /* Light Yellow */
+  color: #333;
+  border: 2px solid #fcd34d;
+  padding: 25px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.card h2 {
+  color: #f59e0b;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.abd {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 1200px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: #333;
+}
+
+/* Text margin and spacing adjustments */
+.abd p {
+  margin: 0 0 1.5em 0; /* Top Right Bottom Left */
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+.abd h2, 
+.abd h3 {
+  margin: 1.5em 0 0.8em 0;
+  color: #2c3e50;
+}
+
+.abd ul {
+  margin: 1em 0;
+  padding-left: 1.5em;
+}
+
+.abd li {
+  margin-bottom: 0.8em;
+  padding-left: 0.5em;
+}
+
+/* Optional: Add a subtle left border to list items */
+.abd li {
+  border-left: 3px solid #3498db;
+  padding-left: 10px;
+}
+.photo {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+

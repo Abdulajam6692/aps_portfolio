@@ -1,0 +1,24 @@
+Business Case: Anomaly Detection in Sensor Data Using 2D Kadane Algorithm with Heatmap Visualization
+Overview
+In complex industrial systems like those Toshiba designs, continuous monitoring of sensor arrays is critical to detect anomalies that could indicate faults or inefficiencies. These sensors often generate large 2D matrices of data representing heat, pressure, vibration, or other metrics across spatial regions.
+
+Problem Statement
+Efficiently identifying regions of unusual activity (anomalies) in sensor data matrices is a challenging task, especially when needing real-time or near-real-time analysis. Traditional threshold-based approaches can miss complex patterns or consume excessive computational resources.
+
+Proposed Solution
+Implementing a 2D Kadane algorithm enables fast and effective detection of the maximum-sum submatrix, which corresponds to the most significant anomaly in the sensor grid. This method allows us to:
+
+Identify spatial clusters of high anomaly scores instead of isolated spikes.
+
+Process large sensor matrices efficiently with a time complexity approximately O(N³) (where N is matrix dimension), suitable for near real-time applications.
+
+Visualization
+A web-based heatmap interface provides:
+
+Dynamic input of sensor matrix data.
+
+Color-coded visualization highlighting the intensity of values across the grid.
+
+Red gradient shading on the detected anomaly submatrix, with opacity indicating relative intensity.
+
+Clear border outlining of the anomalous region for immediate identification.

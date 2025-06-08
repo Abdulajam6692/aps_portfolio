@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Square Root Decomposition – Max Query</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Max Query using Square Root Decomposition</h2>
+    <label for="arrayInput">Enter array elements (comma separated):</label>
+    <input type="text" id="arrayInput" placeholder="e.g. 4,2,5,1,7,6,3,9,8,0"/>
+
+    <label for="rangeL">Start Index (L):</label>
+    <input type="number" id="rangeL" />
+
+    <label for="rangeR">End Index (R):</label>
+    <input type="number" id="rangeR" />
+
+    <button onclick="performMaxQuery()">Get Max</button>
+
+    <div id="output"></div>
+
+    <canvas id="visualChart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

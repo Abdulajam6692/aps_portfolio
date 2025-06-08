@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Persistent Segment Tree</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Persistent Segment Tree Demo</h2>
+    <label>Initial Array (comma separated):</label>
+    <input type="text" id="arrayInput" placeholder="e.g. 1,2,3,4,5" />
+
+    <button onclick="buildTree()">Build Tree</button>
+
+    <hr/>
+
+    <h3>Update</h3>
+    <label>Index:</label>
+    <input type="number" id="updateIndex" />
+    <label>New Value:</label>
+    <input type="number" id="updateValue" />
+    <button onclick="applyUpdate()">Update</button>
+
+    <hr/>
+
+    <h3>Query</h3>
+    <label>Version:</label>
+    <input type="number" id="queryVersion" />
+    <label>Range (L to R):</label>
+    <input type="number" id="queryL" />
+    <input type="number" id="queryR" />
+    <button onclick="performQuery()">Query</button>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

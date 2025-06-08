@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PageRank for System Dependency Analysis</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #f3f3f3;
+      color: #333;
+      padding: 30px;
+      line-height: 1.6;
+    }
+
+    .container {
+      background-color: #ffffff;
+      max-width: 800px;
+      margin: auto;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #004080;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #00796b;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+      list-style-type: square;
+    }
+
+    .checklist li::before {
+      content: "✅ ";
+    }
+
+    .code-box {
+      background-color: #e3f2fd;
+      padding: 12px;
+      border-left: 4px solid #007acc;
+      margin-top: 10px;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Using PageRank for Critical Dependency Analysis in Complex Systems</h1>
+
+    <div class="section">
+      <h2>🧩 Context</h2>
+      <p>Modern computing systems — whether in embedded devices, cloud platforms, or hardware-software co-designed architectures — are composed of highly interconnected modules. These modules depend on each other for data, functionality, or control, forming a directed dependency graph.</p>
+    </div>
+
+    <div class="section">
+      <h2>💡 PageRank Application</h2>
+      <p>Represent the system as a directed graph, where:</p>
+      <ul>
+        <li><strong>Nodes</strong> = individual components or modules</li>
+        <li><strong>Edges</strong> = “depends on” relationships (e.g., module A needs module B)</li>
+      </ul>
+      <p>Apply PageRank to rank components based on structural influence and connectivity within the system.</p>
+    </div>
+
+    <div class="section">
+      <h2>🎯 Business Value</h2>
+      <ul class="checklist">
+        <li><strong>Prioritized Testing and QA</strong>: High-ranking modules are structurally central; bugs in these are likely to propagate. Prioritize testing and validation accordingly.</li>
+        <li><strong>System Design Optimization</strong>: Focus power delivery, cooling, and fault tolerance around high-impact nodes identified via PageRank.</li>
+        <li><strong>Efficient Maintenance & Updates</strong>: During firmware or software updates, prioritize components that influence many others to minimize overall system risk.</li>
+        <li><strong>Resilience and Risk Analysis</strong>: Model supplier-product or component-failure graphs. Use PageRank to identify elements whose failure would most disrupt system functionality.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>⚙️ Computational Complexity</h2>
+      <div class="code-box">
+        Graph Construction: O(N + E)<br><br>
+        PageRank Iteration (Power Method):<br>
+        Time: O(K × (N + E))<br>
+        K = iterations to converge (typically 30–100)<br>
+        N = number of components<br>
+        E = dependency edges<br>
+        <br>
+        Space: O(N)
+      </div>
+    </div>
+  </div>
+</body>
+</html>

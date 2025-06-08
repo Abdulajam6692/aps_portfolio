@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KD Tree Query</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>KD Tree Query System</h2>
+
+  <div class="input-block">
+    <label>Enter Points:</label>
+    <textarea id="pointInput" placeholder="(1,2),(2,2),(3,4)"></textarea>
+
+    <label>Select Query Type:</label>
+    <select id="queryType">
+      <option value="range">Range Query</option>
+      <option value="nns">Nearest Neighbor</option>
+    </select>
+
+    <div id="queryFields">
+      <!-- Dynamic fields appear here -->
+    </div>
+
+    <button onclick="runKDTree()">Run</button>
+
+   
+    <div id="output"></div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

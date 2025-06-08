@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UCS Pathfinder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    input, button {
+      padding: 8px;
+      margin: 5px 0;
+      width: 100%;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 10px;
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Uniform Cost Search (UCS) Pathfinder</h1>
+  
+  <div>
+    <label>Nodes (comma-separated, e.g., A,B,C,D):</label>
+    <input type="text" id="nodes" placeholder="A,B,C,D">
+  </div>
+  
+  <div>
+    <label>Edges (format: from-to-weight, comma-separated, e.g., A-B-2,B-C-3):</label>
+    <input type="text" id="edges" placeholder="A-B-2,B-C-3">
+  </div>
+  
+  <div>
+    <label>Start Node:</label>
+    <input type="text" id="start" placeholder="A">
+  </div>
+  
+  <div>
+    <label>Goal Node:</label>
+    <input type="text" id="goal" placeholder="D">
+  </div>
+  
+  <button id="find-path">Find Optimal Path</button>
+  
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
